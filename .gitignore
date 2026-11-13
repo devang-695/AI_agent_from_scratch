@@ -1,1 +1,55 @@
+# --- Secrets & environment (MOST IMPORTANT) ---
 .env
+.env.*
+!.env.example
+.env.local
+.env.production
+.env.staging
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# --- Model weights & checkpoints ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.onnx
+*.pkl
+*.bin
+checkpoints/
+runs/
+
+# --- Datasets & large files ---
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.jsonl
+!data/samples/*.csv
+
+# --- Testing & linting ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp   
